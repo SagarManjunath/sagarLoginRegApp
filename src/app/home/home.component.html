@@ -1,0 +1,39 @@
+
+{{userData | json}}
+<div class="form-group"> 
+    <a routerLink="../login" class="btn btn-link">LogOut</a>
+</div>
+<div>
+    <strong>basic parts of an Angular application</strong>
+    <ol>
+        <li>Components</li>
+        <li>Modules</li>
+        <li>Templates</li>
+        <li>Services</li>
+        <li>Metadata and decorators</li>
+    </ol>
+</div>
+<div>
+
+    <div>
+        <strong>HTTP Interceptor</strong>
+        <p>The Angular Interceptor helps us to modify the HTTP Request by intercepting it before 
+            the Request is sent to the back end. It can also modify the incoming Response from the back end.
+             The Interceptor globally catches every outgoing and in coming request at a single place. </p>
+    </div>
+    <div>
+
+    <label>Click on call api to get response from api</label>
+<button  class="btn btn-primary" (click)="callApi()"> 
+    Call API
+</button>
+</div>
+
+<div>
+    <label>usage of *ngFor -> click call api</label>
+<div *ngFor="let user of httpData">
+    {{user.name}} -> {{user.email}}
+</div>
+</div>
+
+
